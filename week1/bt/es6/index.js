@@ -15,6 +15,7 @@ function lastIndexOf(arr, elt, start) {
 
 console.log(lastIndexOf([1, 2, 1, 2], 2))
 
+*/
 
 const inventory = [
 
@@ -34,8 +35,10 @@ const inventory = [
 
 ]
 
-let totalMachineValue = VIẾT_BIỂU_THỨC_TẠI_ĐÂY//
+let totalMachineValue = inventory.filter((inventorys) => inventorys.type === "machine")
 
+
+/*
 console.log(totalMachineValue)
 
 
@@ -70,6 +73,7 @@ const myObjects = [
 console.log(detectCollision(myObjects, {x:4, y:2}))
 */
 
+/*
 function replace(array, from, to, elements) {
 
   array.splice.apply(array, [from, to - from].concat(elements))
@@ -101,3 +105,4 @@ function recordOrders(time) {
 recordOrders(new Date, "coffee", "yaourt", "pizza")
 
 console.log(customerOrder)
+*/
