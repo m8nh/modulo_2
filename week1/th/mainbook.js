@@ -1,0 +1,13 @@
+"use strict";
+exports.__esModule = true;
+var bookk_1 = require("./bookk");
+var bookmannger_1 = require("./bookmannger");
+var book1 = new bookk_1.Book('B001', 'Lập trình Java');
+var book2 = new bookk_1.Book('B002', 'Lập trình PHP');
+var book3 = new bookk_1.Book('B003', 'Lập trình TypeScript');
+var bookManager = new bookmannger_1.BookManager();
+bookManager.add(book1);
+bookManager.add(book2);
+bookManager.add(book3);
+bookManager.update('B003', 'lập trình MySQL');
+console.log(bookManager.getList());
