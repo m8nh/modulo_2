@@ -1,0 +1,13 @@
+"use strict";
+exports.__esModule = true;
+var emaneger_1 = require("./emaneger");
+var employee_1 = require("./employee");
+var hieu = new employee_1.Empployee(1, 'Pham', 'Hieu', '2004', 'Berlin', 'Lau don');
+var nam = new employee_1.Empployee(4, 'Nguyen', 'Nam', '1991', 'Canh Berlin', 'Lau don 2');
+emaneger_1.EmployeeManeger.add(hieu);
+emaneger_1.EmployeeManeger.add(nam);
+emaneger_1.EmployeeManeger.display();
+var dai = new employee_1.Empployee(3, 'Le', 'Đại', '2007', 'Đông Anh', 'Tutor C10');
+emaneger_1.EmployeeManeger.editEmployee(4, dai);
+console.log('-----Sau khi thay----');
+emaneger_1.EmployeeManeger.display();

@@ -1,4 +1,5 @@
 class Instructor1{
+    [x: string]: any;
 name:string;
 role:string
 
@@ -18,26 +19,26 @@ role:string
     }
 
     // Static method
-    static canTeach(instructor) {
+    static canTeach(instructor: Instructor1) {
         return (instructor.role === 'classroom');
     }
 
 }
 
-let juniorInstructor = new Instructor({ 'name' : 'Brian' });
-let seniorInstructor = new Instructor({ 'name' : 'Alice', "role" : "classroom" });
+let juniorInstructor = new Instructor1({ 'name' : 'Brian' });
+let seniorInstructor = new Instructor1({ 'name' : 'Alice', "role" : "classroom" });
 
 juniorInstructor.renderDetails(); // "Brian - assistant"
 seniorInstructor.renderDetails(); // "Alice - classroom"
 
-Instructor.helloWorld(); // "Hi there"
+Instructor1.helloWorld(); // "Hi there"
 
 // "Brian can teach: false"
 console.log(
-    `${juniorInstructor.namcleare} can teach: ${Instructor.canTeach(juniorInstructor)}`
+    `${juniorInstructor.namcleare} can teach: ${Instructor1.canTeach(juniorInstructor)}`
 );
 
 // "Alice can teach: true"
 console.log(
-    `${seniorInstructor.name} can teach: ${Instructor.canTeach(seniorInstructor)}`
+    `${seniorInstructor.name} can teach: ${Instructor1.canTeach(seniorInstructor)}`
 );
