@@ -14,13 +14,15 @@ export class EmployeeManeger {
             console.log(employee);
         }
     }
+}
 
-    static deleteEmployee({ id }: { id: number; }): void {
+    static deleteEmployee( id: number): void {
         for (let i = 0; i < EmployeeManeger.listEmployee.length; i++){
             if (EmployeeManeger.listEmployee[i].id === id){
                 EmployeeManeger.listEmployee.splice(i, 1);
             } 
         }
+        this.display()
 }
     static editEmployee(id: number, empyeeEdit: Empployee): void{
         for (let i = 0; i < EmployeeManeger.listEmployee.length; i++){
