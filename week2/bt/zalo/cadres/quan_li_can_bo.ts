@@ -187,6 +187,10 @@ main1();
 
 
 
+
+function display() {
+    throw new Error("Function not implemented.");
+}
 // function display() {
     // throw new Error("Function not implemented.");
 // }
