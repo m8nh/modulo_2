@@ -13,7 +13,7 @@ describe('BasicCalculator', () => {
         expect(calc.subtract(5,3)).toEqual(2);
     })
     test('should return the multiplication of a*b', () => {
-        expect(calc.multiple(2,3)).toEqual(6);
+        expect(calc.multipl(2,3)).toEqual(6);
     })
     test('should return the division of a / b', () => {
         expect(calc.divide(2,3)).toEqual(0.5);
