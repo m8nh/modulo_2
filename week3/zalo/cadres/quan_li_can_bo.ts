@@ -14,8 +14,8 @@ class Cadres {
     getName(): string {
         return this.name;
     }
-    setName(valuue: string) {
-        this.name = valuue;
+    setName(value: string) {
+        this.name = value;
     }
     getAge(): number {
         return this.age;
@@ -182,11 +182,6 @@ function main1() {
     } while (choice !== 0);
 }
 main1();
-
-
-
-
-
 
 function display() {
     throw new Error("Function not implemented.");
